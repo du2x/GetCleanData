@@ -1,5 +1,7 @@
-### GetCleanData programming assignment
+# GetCleanData programming assignment
 
-# to run
+## to run
 
+```
 Rscript run_analysis.R
+```
