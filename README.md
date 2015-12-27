@@ -17,7 +17,4 @@ The `CodeBook.md` has some details.
 
        $ Rscript run_analysis.R
 
-4. Look for the final dataset at result.txt
-
-	   $ head -3 data/output/uci_har_mean_std_averages.csv
-	   
+4. The output will be at result.txt
