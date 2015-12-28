@@ -49,8 +49,8 @@ nd<-cbind(ssmerged, subjectMerged)
 names(nd)<- c(names(ssmerged), 'Subject')
 # melt the new dataset
 melted<-melt(nd, id=c("Activity", "Subject"), measure.vars=ftnames)
-# acasting grouped by activities and subjects for each variable
-result<-acast(melted, Activity ~ Subject  ~ variable, mean)
+# dcasting grouped by activities and subjects for each variable
+result<-dcast(melted, Activity + Subject~ variable, mean)
 
 # writing result to file
 write.table(result, file="result.txt", row.name=FALSE)
